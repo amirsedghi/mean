@@ -16,22 +16,6 @@ app.config(function($routeProvider, $httpProvider){
     templateUrl: 'partials/login.html',
     controller: 'userController'
   })
-  .when('/dashboard', {
-    templateUrl: 'partials/dashboard.html',
-    controller: 'dashboardController'
-  })
-  .when('/addQuestion', {
-    templateUrl: 'partials/addQuestion.html',
-    controller: 'questionController'
-  })
-  .when('/question/:id', {
-    templateUrl: 'partials/showQuestion.html',
-    controller: 'showQuestionController'
-  })
-  .when('/answer/:id', {
-    templateUrl: 'partials/answer.html',
-    controller: 'answerController'
-  })
   .otherwise({
     redirectTo: '/dashboard'
   })
